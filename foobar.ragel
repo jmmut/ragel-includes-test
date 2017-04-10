@@ -1,12 +1,7 @@
 
 %%{
     machine fooFSM;
-    action userAction {
-        printf("in action\n");
-    }
-    action userErrorAction {
-        printf("in error action\n");
-    }
+	include utils "actions.ragel";
 
     fooFSM = (( 'foo' | 'bar' ) % userAction $! userErrorAction);
 }%%

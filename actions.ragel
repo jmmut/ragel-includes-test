@@ -1,0 +1,11 @@
+
+%%{
+    machine utils;
+    action userAction {
+        printf("in action\n");
+    }
+    action userErrorAction {
+        printf("in error action\n");
+    }
+
+}%%
