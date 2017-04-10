@@ -1,0 +1,12 @@
+
+%%{
+    machine fooFSM;
+    action userAction {
+        printf("in action\n");
+    }
+    action userErrorAction {
+        printf("in error action\n");
+    }
+
+    fooFSM = (( 'foo' | 'bar' ) % userAction $! userErrorAction);
+}%%
