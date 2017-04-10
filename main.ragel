@@ -5,7 +5,8 @@
 %%{
   machine foo;
   include fooFSM "foobar.ragel";
-  main := fooFSM 0 @{ res = 1; };
+  include barFSM "barbaz.ragel";
+  main := fooFSM barFSM 0 @{ res = 1; };
 }%%
 
 %% write data;

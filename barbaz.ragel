@@ -1,0 +1,7 @@
+
+%%{
+    machine barFSM;
+	include utils "actions.ragel";
+
+    barFSM = (( 'bar' | 'baz' ) % userAction $! userErrorAction);
+}%%
